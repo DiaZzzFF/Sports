@@ -1,3 +1,3 @@
-<svg width="40" height="40" fill="none" viewBox="0 0 40 40">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40">
   <path fill="#fff" d="M35 5H5a3.322 3.322 0 00-3.333 3.333v20A3.332 3.332 0 005 31.667h8.334V35h13.333v-3.333H35c1.834 0 3.317-1.5 3.317-3.334l.017-20C38.334 6.483 36.834 5 35 5zm0 23.333H5v-20h30v20zm-8.333-10L15 25V11.667l11.667 6.666z"/>
 </svg>

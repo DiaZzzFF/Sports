@@ -21,3 +21,7 @@
     opacity: 0.3;
   }
 }
+
+@mixin out {
+  outline: 1px solid purple;
+}
