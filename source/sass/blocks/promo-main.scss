@@ -3,12 +3,12 @@
   min-height: 665px;
 
   background-color: $gray;
-  background-image: url("../img/bg-promo.jpg");
+  background-image: url("../img/bg-promo-main.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-promo@2x.jpg");
+    background-image: url("../img/bg-promo-main@2x.jpg");
     background-size: 1440px auto;
   }
 }
@@ -25,7 +25,7 @@
 .promo-main__heading {
   display: block;
 
-  width: 550px;
+  max-width: 550px;
   margin-bottom: 27px;
 
   font-size: 36px;
@@ -38,7 +38,7 @@
 }
 
 .promo-main__text {
-  width: 460px;
+  max-width: 460px;
   margin: 0;
   margin-bottom: 51px;
 
@@ -50,6 +50,11 @@
 
 .promo-main__link-box {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 348px;
+  margin-bottom: 20px;
 }
 
 .promo-main__link {
@@ -59,6 +64,7 @@
 
   width: 156px;
   min-height: 47px;
+  margin-bottom: 20px;
 
   background-color: black;
   background-repeat: no-repeat;
@@ -66,12 +72,10 @@
   border-radius: 7px;
 
   &--apple {
-    margin-right: 36px;
-
     background-image: url("../img/btn-apple.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/btn-apple@2x.jpg");
+      background-image: url("../img/btn-apple@2x.png");
       background-size: 156px auto;
     }
   }
@@ -80,9 +84,77 @@
     background-image: url("../img/btn-google.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/btn-google@2x.jpg");
+      background-image: url("../img/btn-google@2x.png");
       background-size: 156px auto;
     }
   }
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .promo-main {
+    min-height: 521px;
+
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+  }
+
+  .promo-main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 360px;
+    min-height: 521px;
+    padding: 209px 20px 15px;
+  }
+
+  .promo-main__heading {
+    margin-bottom: 29px;
+
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .promo-main__text {
+    max-width: 310px;
+    margin-bottom: 53px;
+
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+  }
+
+  .promo-main__link-box {
+    min-width: 320px;
+  }
+
+  .promo-main__link {
+    width: 146px;
+    min-height: 44px;
+
+    &--apple {
+      background-image: url("../img/btn-apple-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/btn-apple-mobile@2x.png");
+        background-size: 146px auto;
+      }
+    }
+
+    &--google {
+      background-image: url("../img/btn-google-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/btn-google-mobile@2x.png");
+        background-size: 146px auto;
+      }
+    }
+  }
+}

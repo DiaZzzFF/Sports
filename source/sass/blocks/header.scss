@@ -7,6 +7,7 @@
   @include out;
 
   display: flex;
+  flex-wrap: wrap;
 
   max-width: 1135px;
   min-height: 154px;
@@ -21,6 +22,8 @@
 
 .header__logo {
   @include link;
+
+  margin-right: 20px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
