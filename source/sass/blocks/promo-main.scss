@@ -1,6 +1,6 @@
 .promo-main {
   width: 100%;
-  min-height: 665px;
+  min-height: 666px;
 
   background-color: $gray;
   background-image: url("../img/bg-promo-main.jpg");
@@ -18,7 +18,7 @@
   @include out;
 
   max-width: 1135px;
-  min-height: 665px;
+  min-height: 666px;
   padding: 228px 10px 0;
 }
 
@@ -31,7 +31,7 @@
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
-  color: #333333;
+  color: $black;
   letter-spacing: 0.03em;
 
   background-color: $gray;

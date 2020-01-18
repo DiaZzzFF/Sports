@@ -33,3 +33,9 @@
 @mixin font-lato-bold {
   font-weight: 700;
 }
+
+@mixin blue-text {
+  line-height: 21px;
+  font-weight: 700;
+  color: $blue;
+}
