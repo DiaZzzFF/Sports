@@ -1,0 +1,86 @@
+.user-friendly {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 716px;
+
+  background-image: url("../img/bg-user-friendly.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-user-friendly@2x.jpg");
+    background-size: 1440px auto;
+  }
+}
+
+.user-friendly__wrapper {
+  @include wrapper;
+  @include out;
+
+  display: flex;
+
+  max-width: 1135px;
+  min-height: 716px;
+}
+
+.user-friendly__promo-box {
+  @include out;
+
+  max-width: 501px;
+  min-width: 501px;
+  padding: 216px 20px 50px 10px;
+}
+
+.user-friendly__headline {
+  @include blue-text;
+
+  display: block;
+
+  margin-bottom: 28px;
+
+  text-transform: uppercase;
+}
+
+.user-friendly__heading {
+  display: block;
+
+  margin-bottom: 26px;
+
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 700;
+  color: $black;
+}
+
+.user-friendly__text {
+  max-width: 470px;
+  margin: 0;
+  margin-bottom: 23px;
+
+  &:last-of-type {
+    margin-bottom: 56px;
+  }
+}
+
+.user-friendly__link {
+  @include blue-text;
+  @include link;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.user-friendly__img-box {
+  display: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-width-help >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $desktop-width-help) {
+  .user-friendly__promo-box {
+    background-color: white;
+  }
+}
