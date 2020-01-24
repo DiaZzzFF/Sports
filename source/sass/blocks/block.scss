@@ -3,3 +3,12 @@
 
   height: 1444px;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .block {
+    height: 4167px;
+  }
+}
+

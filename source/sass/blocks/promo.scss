@@ -99,3 +99,81 @@
 .promo__img-box {
   display: none;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .promo {
+    min-height: 696px;
+
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+  }
+
+  .promo__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 360px;
+    min-height: 696px;
+  }
+
+  .promo__box {
+    min-width: 320px;
+    padding: 18px 20px 6px;
+
+    text-align: center;
+  }
+
+  .promo__heading {
+    margin-bottom: 13px;
+  }
+
+  .promo__text {
+    @include wrapper;
+
+    max-width: 305px;
+    margin-bottom: 40px;
+  }
+
+  .promo__link-box {
+    min-width: 320px;
+  }
+
+  .promo__link {
+    width: 146px;
+    min-height: 44px;
+
+    &--apple {
+      background-image: url("../img/btn-apple-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/btn-apple-mobile@2x.png");
+        background-size: 146px auto;
+      }
+    }
+
+    &--google {
+      background-image: url("../img/btn-google-mobile.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/btn-google-mobile@2x.png");
+        background-size: 146px auto;
+      }
+    }
+  }
+
+  .promo__img-box {
+    @include out;
+
+    display: block;
+  }
+
+  .promo__img {
+    width: 360px;
+    height: 261px;
+  }
+}
