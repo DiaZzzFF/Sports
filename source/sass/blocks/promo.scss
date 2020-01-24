@@ -1,0 +1,101 @@
+.promo {
+  width: 100%;
+  min-height: 485px;
+
+  background-image: url("../img/bg-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: left 1px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-promo@2x.jpg");
+    background-size: 666px auto;
+  }
+}
+
+.promo__wrapper {
+  @include wrapper;
+  @include out;
+
+  display: flex;
+  justify-content: flex-end;
+
+  max-width: 1135px;
+  min-height: 485px;
+}
+
+.promo__box {
+  @include out;
+
+  max-width: 545px;
+  min-width: 545px;
+  padding: 104px 0 50px 10px;
+}
+
+.promo__heading {
+  display: block;
+
+  margin-bottom: 33px;
+
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 700;
+  color: $black;
+
+  background-color: white;
+}
+
+.promo__text {
+  max-width: 530px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  line-height: 25px;
+
+  background-color: white;
+}
+
+.promo__link-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 348px;
+  margin-bottom: 20px;
+}
+
+.promo__link {
+  @include link;
+
+  display: block;
+
+  width: 156px;
+  min-height: 47px;
+  margin-bottom: 20px;
+
+  background-color: black;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 7px;
+
+  &--apple {
+    background-image: url("../img/btn-apple.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/btn-apple@2x.png");
+      background-size: 156px auto;
+    }
+  }
+
+  &--google {
+    background-image: url("../img/btn-google.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/btn-google@2x.png");
+      background-size: 156px auto;
+    }
+  }
+}
+
+.promo__img-box {
+  display: none;
+}
