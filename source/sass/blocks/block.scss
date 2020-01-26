@@ -1,14 +1,14 @@
 .block {
   @include out;
 
-  height: 709px;
+  height: 500px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
   .block {
-    height: 4167px;
+    height: 500px;
   }
 }
 
