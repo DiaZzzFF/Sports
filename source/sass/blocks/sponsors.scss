@@ -1,0 +1,40 @@
+.sponsors {
+  width: 100%;
+  min-height: 278px;
+
+  background-color: $gray-2;
+}
+
+.sponsors__wrapper {
+  @include wrapper;
+  @include out;
+
+  max-width: 1135px;
+  min-height: 278px;
+  padding: 56px 17px 0;
+}
+
+.sponsors__heading {
+  display: block;
+
+  margin-bottom: 59px;
+
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 700;
+  color: $black;
+  text-align: center;
+}
+
+.sponsors__list {
+  @include ul-style;
+  @include out;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsors__link {
+  @include link;
+}
