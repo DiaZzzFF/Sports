@@ -23,3 +23,11 @@
   width: 25px;
   height: 25px;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .social__list {
+    margin: 5px 10px 23px;
+  }
+}

@@ -26,3 +26,11 @@
   font-weight: 700;
   color: white;
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .menu__item {
+    padding: 5px 9px;
+  }
+}

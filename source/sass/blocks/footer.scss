@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  min-height: 127px;
+  min-height: 126px;
 
   background-color: $blue;
 }
@@ -33,4 +33,34 @@
   align-items: center;
 
   width: 67%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .footer {
+    min-height: 210px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    max-width: 360px;
+    min-height: 210px;
+    padding: 10px;
+    padding-top: 41px;
+  }
+
+  .footer__logo {
+    margin: 0 10px;
+  }
+
+  .footer__box {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    width: 100%;
+  }
 }
