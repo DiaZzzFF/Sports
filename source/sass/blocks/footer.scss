@@ -1,4 +1,36 @@
 .footer {
   width: 100%;
-  min-height: 555px; // 555 - example
+  min-height: 127px;
+
+  background-color: $blue;
+}
+
+.footer__wrapper {
+  @include wrapper;
+  @include out;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1135px;
+  min-height: 126px;
+  padding: 10px;
+}
+
+.footer__logo {
+  @include link;
+
+  display: block;
+
+  width: 99px;
+  height: 32px;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 67%;
 }

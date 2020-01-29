@@ -1,0 +1,28 @@
+.menu {
+  @include ul-style;
+  @include out;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 415px;
+}
+
+.menu__item {
+  @include link;
+  @include out;
+
+  padding: 5px 18px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__link {
+  display: block;
+
+  line-height: 21px;
+  font-weight: 700;
+  color: white;
+}
