@@ -10,6 +10,7 @@
     <link rel="preload" href="fonts/lato-regular.woff2" as="font">
     <link rel="preload" href="fonts/lato-bold.woff2" as="font">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -239,7 +240,207 @@
         </div>
       </section>
 
-      <section class="block">
+      <section class="comments">
+        <h2 class="visually-hidden">User comments</h2>
+
+        <strong class="comments__heading">
+          What Our Users Say
+        </strong>
+
+        <div class="comments__slider swiper-container">
+          <ul class="comments__list swiper-wrapper">
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-2.webp 1x, img/user-2@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-2.png" srcset="img/user-2@2x.png 2x" alt="Avatar User">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  User
+                </a>
+
+                <a class="comments__link comments__link--tw comments__link--tw-disable" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                I use this app every day and it's a great way
+                to keep up to date with what's going on in
+                football.
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-2.webp 1x, img/user-2@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-2.png" srcset="img/user-2@2x.png 2x" alt="Avatar User">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  User
+                </a>
+
+                <a class="comments__link comments__link--tw comments__link--tw-disable" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                I use this app every day and it's a great way
+                to keep up to date with what's going on in
+                football.
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-1.webp 1x, img/user-1@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-1.png" srcset="img/user-1@2x.png 2x" alt="Avatar Noah Jackson">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  Noah Jackson
+                </a>
+
+                <a class="comments__link comments__link--tw" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                I use this app every day and it's a great way
+                to keep up to date with what's going on in
+                football. It's a shame it won't rotate into
+                landscape mode like its main competitor
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-2.webp 1x, img/user-2@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-2.png" srcset="img/user-2@2x.png 2x" alt="Avatar Darren Wilson">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  Darren Wilson
+                </a>
+
+                <a class="comments__link comments__link--tw" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                Good for scores and commentary but the
+                team lineups have stopped working.
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-3.webp 1x, img/user-3@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-3.png" srcset="img/user-3@2x.png 2x" alt="Avatar Michael Akinuli">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  Michael Akinuli
+                </a>
+
+                <a class="comments__link comments__link--tw" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                Good for watching the goals and great for
+                highlights instead of waiting till 10:30 before
+                you can watch highlights on March of the day
+                also no need of sky go
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-4.webp 1x, img/user-4@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-4.png" srcset="img/user-4@2x.png 2x" alt="Avatar Sarah Udoma">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  Sarah Udoma
+                </a>
+
+                <a class="comments__link comments__link--tw" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                This app has videos for other premier league
+                teams who play and it also gives me
+                nofications when my favourite team plays
+              </p>
+            </li>
+
+            <li class="comments__item swiper-slide">
+              <div class="comments__link-box">
+                <a class="comments__link comments__link--avatar" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="img/user-2.webp 1x, img/user-2@2x.webp 2x">
+
+                    <img class="comments__img" src="img/user-2.png" srcset="img/user-2@2x.png 2x" alt="Avatar User">
+                  </picture>
+                </a>
+
+                <a class="comments__link comments__link--name" href="#">
+                  User
+                </a>
+
+                <a class="comments__link comments__link--tw" href="#">
+                  <svg class="comments__svg" width="15" height="12"><use xlink:href="#icon-twitter-1"></use></svg>
+                </a>
+              </div>
+
+              <p class="comments__text">
+                I use this app every day and it's a great way
+                to keep up to date with what's going on in
+                football.
+              </p>
+            </li>
+          </ul>
+
+          <div class="comments__gradient-box comments__gradient-box--left"></div>
+          <div class="comments__gradient-box comments__gradient-box--right"></div>
+
+          <div class="comments__pagination swiper-pagination"></div>
+
+          <button class="comments__arrow comments__arrow--prev"></button>
+          <button class="comments__arrow comments__arrow--next"></button>
+        </div>
 
       </section>
 
@@ -390,6 +591,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
