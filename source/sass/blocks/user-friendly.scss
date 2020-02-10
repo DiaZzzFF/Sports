@@ -17,7 +17,6 @@
 
 .user-friendly__wrapper {
   @include wrapper;
-  @include out;
 
   display: flex;
 
@@ -26,8 +25,6 @@
 }
 
 .user-friendly__promo-box {
-  @include out;
-
   max-width: 501px;
   min-width: 501px;
   padding: 216px 20px 50px 10px;
@@ -81,7 +78,15 @@
 
 @media (max-width: $desktop-width-help) {
   .user-friendly__promo-box {
-    background-color: white;
+    background-color: rgba($color: white, $alpha: 0.5);
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .user-friendly {
+    background-position: -440px top;
   }
 }
 
@@ -125,8 +130,6 @@
   }
 
   .user-friendly__img-box {
-    @include out;
-
     display: block;
   }
 
