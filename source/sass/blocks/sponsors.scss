@@ -7,7 +7,6 @@
 
 .sponsors__wrapper {
   @include wrapper;
-  @include out;
 
   max-width: 1135px;
   min-height: 278px;
@@ -15,8 +14,6 @@
 }
 
 .sponsors__heading {
-  @include out;
-
   display: block;
 
   margin-bottom: 59px;
@@ -30,7 +27,6 @@
 
 .sponsors__list {
   @include ul-style;
-  @include out;
 
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +41,19 @@
 
 .sponsors__link {
   @include link;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .sponsors__list {
+    justify-content: space-evenly;
+  }
+
+  .sponsors__item {
+    margin: 0 15px;
+    margin-bottom: 25px;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -65,8 +74,6 @@
   }
 
   .sponsors__list {
-    justify-content: space-evenly;
-
     padding: 0 5px;
   }
 }
