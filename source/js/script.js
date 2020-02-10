@@ -19,6 +19,21 @@
     },
   };
 
+  var tabletSwiperConfig = {
+    loop: true,
+    freeMode: true,
+    slidesPerView: 2,
+    spaceBetween: 25,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.comments__arrow--next',
+      prevEl: '.comments__arrow--prev',
+    },
+  };
+
   var mobileSwiperConfig = {
     slidesPerView: 1,
     centeredSlides: true,
@@ -46,7 +61,18 @@
       swiperComments.init();
     }
 
-    if (window.matchMedia('(min-width: 768px)').matches && currentBreakpoint !== 'desktop') {
+    if (window.matchMedia('(min-width: 768px) and (max-width: 1023px)').matches && currentBreakpoint !== 'tablet') {
+      currentBreakpoint = 'tablet';
+
+      if (swiperComments) {
+        swiperComments.destroy();
+      }
+
+      swiperComments = new Swiper('.swiper-container', tabletSwiperConfig);
+      swiperComments.init();
+    }
+
+    if (window.matchMedia('(min-width: 1024px)').matches && currentBreakpoint !== 'desktop') {
       currentBreakpoint = 'desktop';
 
       if (swiperComments) {

@@ -1,6 +1,4 @@
 .comments {
-  @include out;
-
   position: relative;
 
   width: 100%;
@@ -22,7 +20,6 @@
 
 .comments__slider {
   @include wrapper;
-  @include out;
 
   position: relative;
   z-index: 1;
@@ -33,7 +30,6 @@
 
 .comments__list {
   @include ul-style;
-  @include out;
 
   margin-bottom: 0;
 }
@@ -99,8 +95,6 @@
 }
 
 .comments__gradient-box {
-  @include out;
-
   position: absolute;
   top: 0;
   z-index: 2;
@@ -170,6 +164,14 @@
   }
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .comments__gradient-box {
+    width: 100px;
+  }
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
@@ -206,4 +208,3 @@
     }
   }
 }
-
