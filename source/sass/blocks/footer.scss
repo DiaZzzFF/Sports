@@ -7,7 +7,6 @@
 
 .footer__wrapper {
   @include wrapper;
-  @include out;
 
   display: flex;
   justify-content: space-between;
@@ -33,6 +32,14 @@
   align-items: center;
 
   width: 67%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .footer__box {
+    width: 72%;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

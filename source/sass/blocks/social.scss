@@ -1,6 +1,5 @@
 .social__list {
   @include ul-style;
-  @include out;
 
   display: flex;
   flex-wrap: wrap;

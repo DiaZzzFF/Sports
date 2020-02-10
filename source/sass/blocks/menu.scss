@@ -1,6 +1,5 @@
 .menu {
   @include ul-style;
-  @include out;
 
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +9,6 @@
 
 .menu__item {
   @include link;
-  @include out;
 
   padding: 5px 18px;
 
