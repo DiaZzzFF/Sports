@@ -7,14 +7,12 @@
 }
 
 .comments__heading {
+  @include font-heading;
+
   display: block;
 
   margin-bottom: 64px;
 
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
-  color: $black;
   text-align: center;
 }
 
@@ -39,7 +37,7 @@
   height: 161px;
   padding: 14px 13px 24px 16px;
 
-  border: 1px solid #828282;
+  border: 1px solid $dark-gray;
   border-radius: 5px;
 
   box-sizing: border-box;
@@ -116,11 +114,11 @@
   height: 11px;
   margin: 0 5.5px;
 
-  background-color: #828282;
+  background-color: $dark-gray;
 }
 
 .comments__pagination .swiper-pagination-bullet-active {
-  background-color: #828282;
+  background-color: $dark-gray;
 }
 
 .comments__arrow {

@@ -28,20 +28,23 @@
   }
 }
 
-@mixin out {
-  outline: 1px solid purple;
-}
-
-@mixin font-lato-normal {
-  font-weight: 400;
-}
-
-@mixin font-lato-bold {
+@mixin font-heading {
+  font-size: 28px;
+  line-height: 37px;
   font-weight: 700;
+  color: $black;
 }
 
 @mixin blue-text {
   line-height: 21px;
   font-weight: 700;
   color: $blue;
+}
+
+@mixin bg-img-none {
+  background-image: none;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: none;
+  }
 }

@@ -22,12 +22,11 @@
 }
 
 .features__heading {
+  @include font-heading;
+
   margin: 0;
   margin-bottom: 55px;
 
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
   color: white;
   text-align: center;
 }
@@ -102,14 +101,11 @@
 
 @media (max-width: $mobile-width) {
   .features {
+    @include bg-none;
+
     min-height: 1775px;
 
     background-color: $gray-2;
-    background-image: none;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
-    }
   }
 
   .features__wrapper {

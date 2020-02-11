@@ -4,7 +4,6 @@
 
 .header__wrapper {
   @include wrapper;
-  @include out;
 
   display: flex;
   flex-wrap: wrap;

@@ -14,7 +14,6 @@
 
 .promo__wrapper {
   @include wrapper;
-  @include out;
 
   display: flex;
   justify-content: flex-end;
@@ -24,22 +23,17 @@
 }
 
 .promo__box {
-  @include out;
-
   max-width: 545px;
   min-width: 545px;
   padding: 104px 0 50px 10px;
 }
 
 .promo__heading {
+  @include font-heading;
+
   display: block;
 
   margin-bottom: 33px;
-
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
-  color: $black;
 
   background-color: white;
 }
@@ -104,13 +98,9 @@
 
 @media (max-width: $mobile-width) {
   .promo {
+    @include bg-none;
+
     min-height: 696px;
-
-    background-image: none;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
-    }
   }
 
   .promo__wrapper {
@@ -167,8 +157,6 @@
   }
 
   .promo__img-box {
-    @include out;
-
     display: block;
   }
 

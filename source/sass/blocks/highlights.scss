@@ -46,14 +46,11 @@
 }
 
 .highlights__heading {
+  @include font-heading;
+
   display: block;
 
   margin-bottom: 26px;
-
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
-  color: $black;
 }
 
 .highlights__text {
@@ -65,10 +62,7 @@
 .highlights__link {
   @include blue-text;
   @include link;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  @include link-text;
 }
 
 .highlights__img-box {
@@ -87,15 +81,11 @@
 
 @media (max-width: $mobile-width) {
   .highlights {
+    @include bg-none;
+
     min-height: 860px;
 
-    background-image: none;
-
     box-shadow: none;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
-    }
   }
 
   .highlights__wrapper {

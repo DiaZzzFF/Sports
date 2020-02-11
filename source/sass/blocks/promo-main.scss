@@ -15,7 +15,6 @@
 
 .promo-main__wrapper {
   @include wrapper;
-  @include out;
 
   max-width: 1135px;
   min-height: 666px;
@@ -94,13 +93,9 @@
 
 @media (max-width: $mobile-width) {
   .promo-main {
+    @include bg-none;
+
     min-height: 521px;
-
-    background-image: none;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
-    }
   }
 
   .promo-main__wrapper {

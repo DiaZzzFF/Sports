@@ -14,14 +14,12 @@
 }
 
 .sponsors__heading {
+  @include font-heading;
+
   display: block;
 
   margin-bottom: 59px;
 
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
-  color: $black;
   text-align: center;
 }
 
@@ -52,7 +50,7 @@
 
   .sponsors__item {
     margin: 0 15px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -75,5 +73,10 @@
 
   .sponsors__list {
     padding: 0 5px;
+  }
+
+  .sponsors__item {
+    margin: 0 5px;
+    margin-bottom: 30px;
   }
 }

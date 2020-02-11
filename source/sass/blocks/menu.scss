@@ -9,12 +9,9 @@
 
 .menu__item {
   @include link;
+  @include link-text;
 
   padding: 5px 18px;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .menu__link {

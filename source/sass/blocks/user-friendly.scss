@@ -41,14 +41,11 @@
 }
 
 .user-friendly__heading {
+  @include font-heading;
+
   display: block;
 
   margin-bottom: 26px;
-
-  font-size: 28px;
-  line-height: 37px;
-  font-weight: 700;
-  color: $black;
 }
 
 .user-friendly__text {
@@ -64,10 +61,7 @@
 .user-friendly__link {
   @include blue-text;
   @include link;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  @include link-text;
 }
 
 .user-friendly__img-box {
@@ -94,14 +88,10 @@
 
 @media (max-width: $mobile-width) {
   .user-friendly {
+    @include bg-none;
+
     min-height: 1024px;
     margin-bottom: 6px;
-
-    background-image: none;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
-    }
   }
 
   .user-friendly__wrapper {
